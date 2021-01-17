@@ -1,6 +1,6 @@
 module.exports = {
   root: true, // Make sure eslint picks up the config at the root of the directory
-  plugins: ['prettier', 'jsx-a11y', 'simple-import-sort', 'import'],
+  plugins: ['prettier', 'jsx-a11y', 'simple-import-sort'],
   parserOptions: {
     ecmaVersion: 2020, // Use the latest ecmascript standard
     sourceType: 'module', // Allows using import/export statements
@@ -32,10 +32,6 @@ module.exports = {
     'react/display-name': 'off',
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
-    'sort-imports': 'off',
-    'import/first': 'error',
-    'import/newline-after-import': 'error',
-    'import/no-duplicates': 'error',
     'jsx-a11y/anchor-is-valid': [
       'error',
       {
