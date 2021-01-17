@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #07070D;
+  color: #F2E9E4;
+}
+
+.grayscale {
+  filter: grayscale(1);
+}
