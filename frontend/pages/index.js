@@ -1,6 +1,5 @@
 import Head from 'next/head';
 
-import Container from '@/components/container';
 import HeroPost from '@/components/hero-post';
 import Intro from '@/components/intro';
 import Layout from '@/components/layout';
@@ -17,8 +16,10 @@ export default function Index({ allPosts, preview }) {
         <Head>
           <title>Next.js Blog Example with {CMS_NAME}</title>
         </Head>
-        <Container>
+        <div className="container mx-auto min-h-screen">
           <Intro />
+        </div>
+        <div className="container mx-auto min-h-screen">
           {heroPost && (
             <HeroPost
               title={heroPost.title}
@@ -30,7 +31,7 @@ export default function Index({ allPosts, preview }) {
             />
           )}
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-        </Container>
+        </div>
       </Layout>
     </>
   );

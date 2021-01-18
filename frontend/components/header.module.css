@@ -1,8 +1,9 @@
-.nav {
-  display: flex;
-  align-content: center;
+.nav-link {
+  border-bottom: 2px solid transparent;
 }
 
-.active {
-  color: red;
+.nav-link:hover {
+  color: var(--active-text-color);
+  border-bottom: 2px solid var(--active-text-color);
+  transition: color 0.5s ease, border-bottom 0.5s;
 }
