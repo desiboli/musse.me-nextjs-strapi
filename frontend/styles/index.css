@@ -1,10 +1,30 @@
+:root {
+  --background-color: #07070D;
+  --text-color: #F2E9E4;
+  --active-text-color: #C9ADA7;
+}
+
+.dark {
+  --background-color: #07070D;
+  --text-color: #F2E9E4;
+  --active-text-color: #C9ADA7;
+}
+
+.light {
+  --background-color: #F2E9E4;
+  --text-color: #07070D;
+  --active-text-color: red;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  background-color: #07070D;
-  color: #F2E9E4;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Roboto Mono', monospace;
+  /* transition: background-color 0.5s ease, color 0.5s ease; */
 }
 
 .grayscale {
